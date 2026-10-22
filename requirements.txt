@@ -1,0 +1,15 @@
+# LiDAR dynamic object tracking -- dependencies
+#
+# Install with:  python -m pip install -r requirements.txt
+
+
+# --- core pipeline -------------------------------------------------------- #
+open3d>=0.19.0          # point clouds, RANSAC, DBSCAN, OBB, visualiser
+numpy>=2.0.0
+pandas>=2.2.0           # CSV parsing and the Excel report frames
+scipy>=1.13.0           # cdist, used for track-to-detection association
+matplotlib>=3.8.0       # jet colormap for the distance LUT
+
+# --- Excel output --------------------------------------------------------- #
+openpyxl>=3.1.0         # pandas ExcelWriter engine
+
